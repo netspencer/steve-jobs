@@ -100,12 +100,44 @@ section.card {
 		}
 	}
 	&#card_3 {
-		h1 {
-			color:#888;
-			font-size:46px;
+		blockquote {
+			line-height:1.5;
+			margin-bottom:20px;
+			font-size:18px;
+			border-left:5px black solid;
+			padding-left:20px;
+			color:#000 !important;
+			
+			&.c1 {
+				border-color:#62BB47;
+			}
+			&.c2 {
+				border-color:#FCB827;
+			}
+			&.c3 {
+				border-color:#F48221;
+			}
+			&.c4 {
+				border-color:#E03A3E;
+			}
+			&.c5 {
+				border-color:#963D97;
+			}
+			&.c6 {
+				border-color:#0096D2;
+			}
 		}
 	}
 	&#card_4 {
+		margin:20px 0;
+		div.video {
+			margin-bottom:20px;
+		}
+		div.img_flag {
+			margin-bottom:20px;
+		}
+	}
+	&#card_5 {
 		margin:20px 0;
 	}
 }
@@ -116,6 +148,17 @@ div.img_flag {
 	width:500px;
 	margin-bottom:10px;
 	background:url("apple_ig.jpg");
+	
+	&.steve1 {
+		height:378px;
+		background:url("steve1.jpg");
+	}
+	
+	&.steve2 {
+		-webkit-box-shadow: inset 8px 8px 8px rgba(0,0,0,0.3);
+		height:626px;
+		background:url("steve2.jpg");
+	}
 }
 
 h1.name {
@@ -126,6 +169,12 @@ h1.name {
 	
 	span {
 		font-weight:normal;
+	}
+	
+	&.section {
+		color:#888;
+		font-size:46px;
+		margin-bottom:20px;
 	}
 }
 
