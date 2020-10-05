@@ -1,187 +1,186 @@
 * {
-	margin:0;
-	padding:0;
-	
-	&::selection {
-		background:#404E53;
-	}
+  margin: 0;
+  padding: 0;
+
+  &::selection {
+    background: #404e53;
+  }
 }
 
 body {
-	font-family:"Helvetica Neue", Helvetica, sans-serif;
-	background:url("ios-texture-light.png");
-	text-shadow: 0px 1px 0px #e5e5ee;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background: url("ios-texture-light.png");
+  text-shadow: 0px 1px 0px #e5e5ee;
 }
 
 .italic {
-	font-style:italic;
+  font-style: italic;
 }
 
 .underline {
-	text-decoration:underline;
+  text-decoration: underline;
 }
 
 .bold {
-	font-weight:bold;
+  font-weight: bold;
 }
 
 .c1 {
-	color:#62BB47;
+  color: #62bb47;
 }
 .c2 {
-	color:#FCB827;
+  color: #fcb827;
 }
 .c3 {
-	color:#F48221;
+  color: #f48221;
 }
 .c4 {
-	color:#E03A3E;
+  color: #e03a3e;
 }
 .c5 {
-	color:#963D97;
+  color: #963d97;
 }
 .c6 {
-	color:#0096D2;
+  color: #0096d2;
 }
 
 section#top_colors {
-	box-shadow:1px 1px 4px rgba(0,0,0,0.3);
-	z-index:100;
-	top:0;
-	position:fixed;
-	width:100%;
-	height:10px;
-	background:#0096D2;
-	
-	div {
-		height:10px;
-		width:16.5%;
-		float:left;
-		
-		&.c1 {
-			background:#62BB47;
-		}
-		&.c2 {
-			background:#FCB827;
-		}
-		&.c3 {
-			background:#F48221;
-		}
-		&.c4 {
-			background:#E03A3E;
-		}
-		&.c5 {
-			background:#963D97;
-		}
-		&.c6 {
-			background:#0096D2;
-		}
-	}
-	
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 10px;
+  background: #0096d2;
+
+  div {
+    height: 10px;
+    width: 16.5%;
+    float: left;
+
+    &.c1 {
+      background: #62bb47;
+    }
+    &.c2 {
+      background: #fcb827;
+    }
+    &.c3 {
+      background: #f48221;
+    }
+    &.c4 {
+      background: #e03a3e;
+    }
+    &.c5 {
+      background: #963d97;
+    }
+    &.c6 {
+      background: #0096d2;
+    }
+  }
 }
 
 section#page {
-	position:relative;
-	width:500px;
-	margin:40px auto;
+  position: relative;
+  width: 500px;
+  margin: 40px auto;
 }
 
 section.card {
-	&#card_1 {
-	}
-	&#card_2 {
-		line-height:1.5;
-		margin:20px 0;
-		font-size:22px;
-		font-weight:200;
-		
-		p {
-			margin-bottom:20px;
-		}
-	}
-	&#card_3 {
-		blockquote {
-			line-height:1.5;
-			margin-bottom:20px;
-			font-size:18px;
-			border-left:5px black solid;
-			padding-left:20px;
-			color:#000 !important;
-			
-			&.c1 {
-				border-color:#62BB47;
-			}
-			&.c2 {
-				border-color:#FCB827;
-			}
-			&.c3 {
-				border-color:#F48221;
-			}
-			&.c4 {
-				border-color:#E03A3E;
-			}
-			&.c5 {
-				border-color:#963D97;
-			}
-			&.c6 {
-				border-color:#0096D2;
-			}
-		}
-	}
-	&#card_4 {
-		margin:20px 0;
-		div.video {
-			margin-bottom:20px;
-		}
-		div.img_flag {
-			margin-bottom:20px;
-		}
-	}
-	&#card_5 {
-		margin:20px 0;
-	}
+  &#card_1 {
+  }
+  &#card_2 {
+    line-height: 1.5;
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 200;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  &#card_3 {
+    blockquote {
+      line-height: 1.5;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border-left: 5px black solid;
+      padding-left: 20px;
+      color: #000 !important;
+
+      &.c1 {
+        border-color: #62bb47;
+      }
+      &.c2 {
+        border-color: #fcb827;
+      }
+      &.c3 {
+        border-color: #f48221;
+      }
+      &.c4 {
+        border-color: #e03a3e;
+      }
+      &.c5 {
+        border-color: #963d97;
+      }
+      &.c6 {
+        border-color: #0096d2;
+      }
+    }
+  }
+  &#card_4 {
+    margin: 20px 0;
+    div.video {
+      margin-bottom: 20px;
+    }
+    div.img_flag {
+      margin-bottom: 20px;
+    }
+  }
+  &#card_5 {
+    margin: 20px 0;
+  }
 }
 
 div.img_flag {
-	-webkit-box-shadow: inset 8px 8px 8px rgba(0,0,0,0.8); 
-	height:500px;
-	width:500px;
-	margin-bottom:10px;
-	background:url("apple_ig.jpg");
-	
-	&.steve1 {
-		height:378px;
-		background:url("steve1.jpg");
-	}
-	
-	&.steve2 {
-		-webkit-box-shadow: inset 8px 8px 8px rgba(0,0,0,0.3);
-		height:626px;
-		background:url("steve2.jpg");
-	}
+  -webkit-box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.8);
+  height: 500px;
+  width: 500px;
+  margin-bottom: 10px;
+  background: url("apple_ig.jpg");
+
+  &.steve1 {
+    height: 378px;
+    background: url("steve1.jpg");
+  }
+
+  &.steve2 {
+    -webkit-box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.3);
+    height: 626px;
+    background: url("steve2.jpg");
+  }
 }
 
 h1.name {
-	color:#220821;
-	font-size:72px;
-	font-weight:bold;
-	text-align:center;
-	
-	span {
-		font-weight:normal;
-	}
-	
-	&.section {
-		color:#888;
-		font-size:46px;
-		margin-bottom:20px;
-	}
+  color: #220821;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+
+  span {
+    font-weight: normal;
+  }
+
+  &.section {
+    color: #888;
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
 }
 
 div.footer {
-	font-style:italic;
-	font-family:Palatino, Georgia, serif;
-	color:#666;
-	font-size:22px;
-	text-align:center;
+  font-style: italic;
+  font-family: Palatino, Georgia, serif;
+  color: #666;
+  font-size: 22px;
+  text-align: center;
 }
