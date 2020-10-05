@@ -80,9 +80,15 @@ section#top_colors {
 }
 
 section#page {
+  overflow: hidden;
   position: relative;
-  width: 500px;
-  margin: 40px auto;
+  width: 100vw;
+  margin-bottom: 20px;
+
+  @media (min-width: 640px) {
+    width: 500px;
+    margin: 40px auto;
+  }
 }
 
 section.card {
@@ -141,10 +147,16 @@ section.card {
 
 div.img_flag {
   box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.8);
-  height: 500px;
-  width: 500px;
   margin-bottom: 10px;
-  background: url("apple_ig.jpg");
+  background-image: url("apple_ig.jpg");
+  background-size: contain;
+  width: 100vw;
+  height: 100vw;
+
+  @media (min-width: 640px) {
+    height: 500px;
+    width: 500px;
+  }
 
   &.steve1 {
     height: 378px;
@@ -155,6 +167,19 @@ div.img_flag {
     box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.3);
     height: 626px;
     background: url("steve2.jpg");
+  }
+}
+
+div.video {
+  iframe {
+    width: 100vw;
+    height: 68vw;
+  }
+  iframe {
+    @media (min-width: 640px) {
+      width: 500px;
+      height: 339px;
+    }
   }
 }
 
