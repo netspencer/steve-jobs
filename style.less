@@ -101,6 +101,10 @@ section.card {
     p {
       margin-bottom: 20px;
     }
+
+    @media (max-width: 640px) {
+      margin: 20px 20px;
+    }
   }
   &#card_3 {
     blockquote {
@@ -110,6 +114,10 @@ section.card {
       border-left: 5px black solid;
       padding-left: 20px;
       color: #000 !important;
+
+      @media (max-width: 640px) {
+        padding-right: 20px;
+      }
 
       &.c1 {
         border-color: #62bb47;
@@ -149,7 +157,7 @@ div.img_flag {
   box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.8);
   margin-bottom: 10px;
   background-image: url("apple_ig.jpg");
-  background-size: contain;
+  background-size: cover;
   width: 100vw;
   height: 100vw;
 
@@ -159,14 +167,26 @@ div.img_flag {
   }
 
   &.steve1 {
-    height: 378px;
-    background: url("steve1.jpg");
+    background-image: url("steve1.jpg");
+    background-size: cover;
+
+    height: 75vw;
+
+    @media (min-width: 640px) {
+      height: 378px;
+    }
   }
 
   &.steve2 {
     box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.3);
-    height: 626px;
-    background: url("steve2.jpg");
+    background-image: url("steve2.jpg");
+    background-size: cover;
+
+    height: 125vw;
+
+    @media (min-width: 640px) {
+      height: 626px;
+    }
   }
 }
 
